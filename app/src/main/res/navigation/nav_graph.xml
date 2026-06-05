@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/calendarFragment">
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.nailbooking.app.ui.CalendarFragment"
+        android:label="Calendar">
+        <action
+            android:id="@+id/action_calendar_to_add"
+            app:destination="@id/addAppointmentFragment"/>
+        <action
+            android:id="@+id/action_calendar_to_summary"
+            app:destination="@id/summaryFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addAppointmentFragment"
+        android:name="com.example.nailbooking.app.ui.AddAppointmentFragment"
+        android:label="Programare Nouă">
+        <argument
+            android:name="selectedDate"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="appointmentId"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.nailbooking.app.ui.SummaryFragment"
+        android:label="Rezumat Zilnic">
+        <argument
+            android:name="selectedDate"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+
+</navigation>

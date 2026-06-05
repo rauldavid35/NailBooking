@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">NailBooking</string>
+    <string name="app_name">Programări Unghii</string>
+    <string name="add_appointment">Programare Nouă</string>
+    <string name="customer_name">Numele clientei</string>
+    <string name="select_date">Alege data</string>
+    <string name="start_time">Ora de început</string>
+    <string name="duration">Durata (minute)</string>
+    <string name="service_type">Tip serviciu</string>
+    <string name="notes">Notițe</string>
+    <string name="save">Salvează</string>
+    <string name="cancel">Anulează</string>
+    <string name="delete">Șterge</string>
+    <string name="alarm_sound">Sunet alarmă</string>
+    <string name="choose_sound">Alege sunetul alarmei</string>
+    <string name="alarm_minutes_before">Anunță-mă cu (minute înainte)</string>
+    <string name="no_appointments">Nicio programare în această zi</string>
+    <string name="overlap_error">Această oră se suprapune cu o altă programare!</string>
+    <string name="channel_name">Reminder Programări</string>
+    <string name="channel_description">Notificări pentru programările de unghii</string>
+    <string name="select_time_label">Alege ora: --:--</string>
+    <string name="no_sound_selected">Niciun sunet selectat</string>
+    <string name="appointments_for">Programări pentru:  </string>
+    <string name="search_hint">Caută după numele clientei…</string>
+    <string name="notify_label">Anunță-mă cu (minute înainte)</string>
+    <string name="upcoming_appointment">Programare apropiată</string>
 </resources>

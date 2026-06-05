@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/summaryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Card programări -->
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Programări"
+                android:textSize="20sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/summaryCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card ore de lucru -->
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ore de lucru"
+                android:textSize="20sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/summaryHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Buton închide -->
+    <Button
+        android:id="@+id/btnCloseSummary"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="Înapoi"
+        android:textSize="22sp"
+        android:backgroundTint="@color/primary"/>
+
+</LinearLayout>

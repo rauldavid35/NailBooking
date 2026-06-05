@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- App colors -->
+    <color name="primary">#FF6B9B8E</color>
+    <color name="primary_dark">#FF4A7A6D</color>
+    <color name="accent">#FFFCE4EC</color>
+    <color name="background">#FFF8F9FA</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="text_primary">#FF212121</color>
+    <color name="text_secondary">#FF757575</color>
+
+    <!-- Service tag colors -->
+    <color name="service_manicure">#FFE91E63</color>
+    <color name="service_pedicure">#FF9C27B0</color>
+    <color name="service_gel">#FF3F51B5</color>
+    <color name="service_nail_art">#FFFF9800</color>
+    <color name="service_other">#FF607D8B</color>
+
+    <!-- Calendar dot colors -->
+    <color name="dot_has_appointments">#FF6B9B8E</color>
 </resources>

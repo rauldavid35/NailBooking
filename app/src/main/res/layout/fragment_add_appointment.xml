@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Client name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fieldName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/customer_name"
+                android:textSize="20sp"
+                android:padding="18dp"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Time picker button -->
+        <Button
+            android:id="@+id/btnPickTime"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/select_time_label"
+            android:textSize="20sp"
+            android:backgroundTint="@color/primary"/>
+
+        <!-- Duration -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fieldDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/duration"
+                android:textSize="20sp"
+                android:padding="18dp"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Service type label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/service_type"
+            android:textColor="@color/text_secondary"
+            android:textSize="18sp"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Service spinner -->
+        <Spinner
+            android:id="@+id/spinnerService"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:padding="12dp"
+            android:textSize="20sp"/>
+
+        <!-- Notes -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fieldNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/notes"
+                android:textSize="20sp"
+                android:padding="18dp"
+                android:inputType="textMultiLine"
+                android:minLines="3"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Alarm label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notify_label"
+            android:textColor="@color/text_secondary"
+            android:textSize="18sp"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Alarm minutes -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fieldAlarmMinutes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ex: 15"
+                android:textSize="20sp"
+                android:padding="18dp"
+                android:inputType="number"
+                android:text="15"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Sound picker button -->
+        <Button
+            android:id="@+id/btnPickSound"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/choose_sound"
+            android:textSize="20sp"
+            android:backgroundTint="@color/primary"/>
+
+        <!-- Selected sound name -->
+        <TextView
+            android:id="@+id/selectedSoundLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_sound_selected"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+        <!-- Overlap error -->
+        <TextView
+            android:id="@+id/overlapError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/overlap_error"
+            android:textColor="#FFE53935"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Save button -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="@string/save"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primary"/>
+
+    </LinearLayout>
+</ScrollView>

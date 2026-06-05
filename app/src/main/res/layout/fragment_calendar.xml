@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/primary"
+        android:elevation="4dp"
+        android:title="@string/app_name"
+        android:titleTextColor="@color/white"
+        app:titleTextAppearance="@style/ToolbarTitle"
+        xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searchField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="18sp"
+            android:padding="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"/>
+
+    <TextView
+        android:id="@+id/selectedDateLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:text="@string/appointments_for"/>
+    
+    <Button
+    android:id="@+id/btnSummary"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="4dp"
+    android:text="Rezumat zi"
+    android:textSize="18sp"
+    android:backgroundTint="@color/primary"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/appointmentsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/primary"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="@string/add_appointment"
+        app:fabSize="normal"
+        xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+</LinearLayout>
